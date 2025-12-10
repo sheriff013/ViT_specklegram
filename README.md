@@ -5,7 +5,24 @@ This repository contains the official PyTorch implementation for the paper: **"E
 
 This work proposes and evaluates a Vision Transformer (ViT) model for high-accuracy temperature regression from Fiber Specklegram Sensor (FSS) images. We also provide a robust analysis of the model's decision-making process using Explainable AI (XAI) techniques.
 
-*Upon acceptance, this repository will be made public and will include the final pre-trained model weights.*
+############################################
+Please cite the related article.
+
+@article{Sadik2025,
+   author = {Serif Ali Sadik},
+   doi = {10.1007/s44397-025-00027-9},
+   issn = {3005-1851},
+   issue = {1},
+   journal = {Discover Sensors},
+   pages = {25},
+   title = {Explainable vision transformer based temperature sensing with fiber specklegram sensors},
+   volume = {1},
+   url = {https://doi.org/10.1007/s44397-025-00027-9},
+   year = {2025}
+}
+
+https://link.springer.com/article/10.1007/s44397-025-00027-9
+############################################
 
 ## Key Findings
 * Our model achieves **state-of-the-art (SotA) performance** on the benchmark dataset (RMSE: 0.592, R²: 0.9997), significantly outperforming previous ANN, CNN, and other Transformer-based approaches.
@@ -77,12 +94,4 @@ To load the trained model, run the full evaluation on the test set, and generate
 python evaluate.py --model_path "vit_speckle_regressor.pt" --data_dir "./data/Original dataset/"
 ```
 
-@article{sadik_2025_fss,
-  title   = {Explainable Vision Transformer Based Temperature Sensing with Fiber Specklegram Sensors},
-  author  = {Serif Ali Sadik},
-  journal = {Discover Sensors},
-  year    = {2025},
-  volume  = {XX},
-  pages   = {XX},
-  doi     = {XX.XXXX/XXXXX}
-}
+
